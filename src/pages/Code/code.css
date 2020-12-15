@@ -1,0 +1,97 @@
+.page-container .page-code img, h2, a {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.page-code img {
+    width: 200px;
+    height: 150px;
+}
+
+.page-container .page-code h2 {
+    width: 30%;
+
+    text-align: center;
+
+    font: 1.2rem Montserrat Alternates;
+    color: #000;
+}
+
+.page-container h2 {
+    width: 30%;
+
+    margin-top: 30px;
+    text-align: center;
+
+    font: 1.1rem Montserrat Alternates;
+    color: #6C6C6C;
+}
+
+.page-code .button-cam {
+    width: 100px;
+    height: 100px;
+}
+
+.page-container button {
+    width: 150px;
+    height: 50px;
+
+    border-radius: 0.4rem;
+    border: 0;
+
+    background-color: #1D71B8;
+
+    font: Bold 1rem Montserrat Alternates;
+    color: #FFF;
+
+    display: block;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+
+    outline: 0;
+    cursor: pointer;
+}
+
+.page-container .last-button {
+    width: 180px;
+    height: 3.6rem;
+
+    border-radius: 0.8rem;
+    border: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 15px;
+
+    background-color: #0DB00A;
+
+    text-decoration: none;
+    cursor: pointer;
+
+    font: Bold 1.1rem Montserrat Alternates;
+    color: #FFF;
+}
+
+.page-container #code {
+    width: 300px;
+    height: 45px;
+
+    border-radius: 0.4rem;
+    border: 0;
+
+    background: #FFF;
+
+    display: none;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+
+    text-align: center;
+
+    outline: none;
+}

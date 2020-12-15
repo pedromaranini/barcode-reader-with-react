@@ -1,6 +1,9 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import logoImg from '../../assets/logo.svg';
+
+import './home.css';
 
 function Home() {
     return (
@@ -28,9 +31,9 @@ function Home() {
                 <input type="email" name="email" placeholder="E-MAIL" />
             </form>
 
-            <a href="/" className="button">
+            <Link to="/code" className="button">
                 ENVIAR
-            </a> 
+            </Link> 
 
             <h2>
                 Trata-se de um MVP e por isso os acessos só conseguirão entender
