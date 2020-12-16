@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { BiCamera } from 'react-icons/bi';
+import { BiCamera, BiArrowBack } from 'react-icons/bi';
 
 import logoImg from '../../assets/logo.svg';
 
@@ -24,7 +24,7 @@ function Code() {
 
                 <h2>Escaneie o código utilizando a câmera abaixo</h2>
                 
-                <Link to="/" className="button-cam">
+                <Link to="/readcode" className="button-cam">
                     <BiCamera size={100} color="#000" />
                 </Link>
             </div>
@@ -44,6 +44,10 @@ function Code() {
                 o projeto após o contato com o time Explica Bula. Caso queira entre 
                 contato clicando aqui.
             </h2>
+
+            <Link to="/" className="back-icon">
+                <BiArrowBack size={30} color="#000" />
+            </Link>
         </div>
     );
 }

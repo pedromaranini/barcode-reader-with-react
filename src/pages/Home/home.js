@@ -24,14 +24,14 @@ function Home() {
             </div>
 
             <form className="input">
-                <input type="text" name="name" placeholder="NOME" />
+                <input id="name" type="text" name="name" placeholder="NOME" />
             </form>
 
             <form className="input">
-                <input type="email" name="email" placeholder="E-MAIL" />
+                <input id="email" type="email" name="email" placeholder="E-MAIL" />
             </form>
 
-            <Link to="/code" className="button">
+            <Link to="/code" className="button" onClick={buttonClick} >
                 ENVIAR
             </Link> 
 
@@ -42,6 +42,15 @@ function Home() {
             </h2>
         </div>
     );
+
+    function buttonClick() {
+        const inputName = document.getElementById('name');
+        const inputEmail = document.getElementById('email');
+
+        // salvar dados no navegador
+        sessionStorage.setItem('name' , inputName.value);
+        sessionStorage.setItem('email', inputEmail.value);
+    }
 }   
 
 export default Home;
